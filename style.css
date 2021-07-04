@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    overflow-x:hidden;
+    width: 100vw;
+    background-color:white;
+}
+
+nav {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    color: white;
+}
+
+nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+ul img {
+    display: none;
+}
+nav ul li, nav img {
+    cursor: pointer;
+}
+
+footer {
+    padding:40px;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+
+.foot-left img {
+    width: 120px;
+
+
+}
+.foot-left  {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+
+
+}
+.foot-left ul {
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.foot-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    justify-content: left;
+}
+.img {
+
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: first baseline;
+}
+
+
+.first-page {
+    height: 95vh;
+    background: url("loopstudios-landing-page-main/images/desktop/image-hero.jpg") rgb(0,0,0);
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    padding:20px;
+    align-items: center;
+    background-image: url("loopstudios-landing-page-main/images/desktop/image-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hamburger-menu, nav ul input {
+    display: none;
+
+}
+
+.container-space {
+    width: 80vw;
+    
+
+
+
+}
+.text-container {
+    margin-top: 10%;
+
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    height:100%;
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container h1 {
+    
+    font-size: 3.5em;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+}
+
+.third-page {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-space {
+    padding:80px;
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left {
+    background-image: url("loopstudios-landing-page-main/images/desktop/image-interactive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    gap:20px;
+    transform: translateX(-20%) translateY(20%);
+    background-color: white;
+
+
+}
+.right h1 {
+    text-transform: uppercase;
+}
+
+.title {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.title button {
+    width:150px;
+    height:40px;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+}
+.creations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:20px;
+    width:80%;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 20vw;
+    height:66vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    color: white;
+    padding:30px;
+    font-size:2em;
+    
+}
+
+.card:hover {
+    opacity: 0.7;
+}
+
+
+
+
+#img1 {
+    background-image: url("loopstudios-landing-page-main/images/desktop/image-deep-earth.jpg");
+
+}
+#img2 {
+    background-image:url("loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg") ;
+}
+
+#img3 {
+    background-image: url("loopstudios-landing-page-main/images/desktop/image-soccer-team.jpg") ;
+}
+
+#img4 {
+    background-image: url("loopstudios-landing-page-main/images/desktop/image-grid.jpg");
+
+}
+#img5 {
+    background-image: url("loopstudios-landing-page-main/images/desktop/image-pocket-borealis.jpg");
+    
+}
+#img6 {
+    background-image: url("loopstudios-landing-page-main/images/desktop/image-from-above.jpg");
+    
+}
+#img7 {
+    background-image: url("loopstudios-landing-page-main/images/desktop/image-curiosity.jpg");
+
+}
+
+#img8 {
+    background-image: url("loopstudios-landing-page-main/images/desktop/image-fisheye.jpg");
+
+}
+@media screen and (max-width:1200px) {
+    .text-container h1 {
+        font-size:4em;
+    }
+    .text-container{
+        height: 50vh;
+        width: 50vw;
+
+    }
+    .card {
+        width: 20vw;
+        height:66vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        justify-content: center;
+        color: white;
+        padding:30px;
+        font-size:2em;
+        
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav ul {
+        top:-1000px;
+        left: 0px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        gap:30px;
+        padding:50px;
+        background-color: black;
+        height:100vh;
+        width: 100vw;
+        font-size:3em;
+    }
+    footer {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap:20px;
+    }
+    .social-media {
+        justify-content: center;
+        align-items: center;
+    }
+    ul img {
+       display: block;
+    }
+    .container-space {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container {
+        width: 100%;
+        height:100%;
+
+    }
+    .text-container h1 {
+        font-size: 3em;
+
+
+    }
+    .creations {
+        
+        grid-template-columns: 1fr;
+       
+    }
+
+    .card {
+        width: 55vh;
+        height: 25vw;
+    }
+    .hamburger-menu input {
+        position: absolute;
+        width: 20px;
+        height:20px;
+        opacity: 0;
+        margin-right:20px;
+    }
+    .grid-space {
+        grid-template-columns: 1fr;
+        height:150vh;
+        width: 100vw;
+        padding:10px;
+    }
+    .left {
+        background-image: url("loopstudios-landing-page-main/images/mobile/image-interactive.jpg");
+        background-repeat: no-repeat;
+    }
+    .right {
+        transform: none;
+    }
+    .foot-left {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .foot-left ul, .img {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul input {
+        display: flex;
+        position: relative;
+        left:75%;
+        opacity: 0;
+        top:50px;
+        width: 50px;
+        transform: scale(4);
+    }
+
+    #icon-close {
+        pointer-events: none;
+        position: relative;
+        display: block;
+        width: 30px;
+        margin-bottom: 50px;
+        left:75%;
+    }
+    #icon-logo {
+        width: 50%;
+    }
+
+    #img1 {
+        background-image: url("loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg");
+    
+    }
+    #img2 {
+        background-image:url("loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg") ;
+    }
+    
+    #img3 {
+        background-image: url("loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg") ;
+    }
+    
+    #img4 {
+        background-image: url("loopstudios-landing-page-main/images/mobile/image-from-above.jpg");
+    
+    }
+    #img5 {
+        background-image: url("loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg");
+        
+    }
+    #img6 {
+        background-image: url("loopstudios-landing-page-main/images/mobile/image-from-above.jpg");
+        
+    }
+    #img7 {
+        background-image: url("loopstudios-landing-page-main/images/mobile/image-curiosity.jpg");
+    
+    }
+    
+    #img8 {
+        background-image: url("loopstudios-landing-page-main/images/mobile/image-fisheye.jpg");
+    
+    }
+  
+}
+
+@media screen and (max-width:500px) {
+    .text-container h1 {
+        font-size: 2em;
+    }
+}
